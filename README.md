@@ -30,7 +30,7 @@ Analyzed payment transactions and paying-user behavior for a gaming platform to 
 
 ### 3. Interactive Dashboard
 
-- Built a Tableau dashboard with **payment-period, language, and age-range filters**.
+- Built an interactive Tableau workbook with **13 worksheets, one dashboard, and seven KPI cards**, including **payment-period, language, and age-range filters**.
 - Presented monthly revenue and paying-user trends together with separate charts explaining their month-to-month movements.
 - Organized metrics and charts for fast comparison of growth, retention, and revenue risk.
 
