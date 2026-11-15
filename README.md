@@ -8,6 +8,10 @@ Analyzed payment transactions and paying-user behavior for a gaming platform to 
 
 **[Explore the Interactive Tableau Dashboard](https://public.tableau.com/views/RevenueAnalyticsCustomerRetention/RevenueAnalyticsCustomerRetention)**
 
+## Dashboard Preview
+
+[![Revenue Analytics & Customer Retention — Tableau Dashboard](assets/revenue-analytics-dashboard.png)](https://public.tableau.com/views/RevenueAnalyticsCustomerRetention/RevenueAnalyticsCustomerRetention)
+
 ## Tools and Technologies
 
 - **PostgreSQL & DBeaver:** Data extraction, joins, CTEs, conditional aggregation, date functions, `COALESCE`, and `LAG()` window functions
@@ -52,26 +56,12 @@ Analyzed payment transactions and paying-user behavior for a gaming platform to 
 
 **December 2022:** Paid users increased from **188 to 189** (**32 new + 33 reactivated − 64 churned = +1**). Monthly revenue rose by **$14.79** as new and reactivated revenue and expansion offset contraction and churn.
 
-## Analysis Visualizations
-
-*The charts below illustrate the aggregated data. For interactive Tableau worksheets and filters, use the live dashboard linked above.*
-
-### Monthly Revenue & Paying Users
-
-![Monthly revenue and paying users](assets/monthly-revenue-paid-users.svg)
-
-### December 2022 Revenue Movement
-
-![Revenue movement decomposition](assets/december-revenue-movement.svg)
-
-### December 2022 Paid-User Movement
-
-![Paid-user movement](assets/december-paid-user-movement.svg)
-
 ## Project Files
 
 | File | Purpose |
 | --- | --- |
+| [Tableau Packaged Workbook](tableau/Revenue-Analytics-Customer-Retention.twbx) | Original interactive Tableau project, worksheets, and embedded extract |
+| [Dashboard Screenshot](assets/revenue-analytics-dashboard.png) | Full dashboard with KPIs and all charts |
 | [Supporting SQL Queries](sql/01_07_supporting_analyses.sql) | Seven independent validation and analytical queries |
 | [Final Tableau Dataset SQL](sql/08_tableau_dataset.sql) | User-month model used to prepare the dashboard extract |
 | [Monthly KPI Summary](data/monthly_kpi_summary.csv) | Aggregated, validated monthly results |
@@ -84,4 +74,4 @@ The analysis uses the **GoIT training dataset** in PostgreSQL tables `project.ga
 
 **MRR terminology:** The source records payments, so reported “MRR” is **calendar-month payment revenue**, not independently verified contractual recurring subscription revenue. **Observed LT/LTV** describe activity within the March–December 2022 window and are not forward-looking estimates. See [Metric Definitions](docs/metric-definitions.md).
 
-Only aggregated reporting data and SQL logic are included in this public repository; user-level records and payment transactions are not republished.
+The Tableau packaged workbook includes an embedded analytical extract. The original raw payment and user source tables are not separately republished.
